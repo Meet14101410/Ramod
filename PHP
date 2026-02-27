@@ -1,0 +1,16 @@
+<?php
+$ramod_village = [
+    "name" => "Ramod",
+    "taluka" => "Kotda Sangani",
+    "district" => "Rajkot",
+    "pincode" => 360030,
+    "agriculture" => ["Cotton", "Groundnut", "Wheat"]
+];
+
+echo "<h2>Details for Village: " . $ramod_village['name'] . "</h2>";
+echo "<ul>";
+echo "<li><strong>Taluka:</strong> " . $ramod_village['taluka'] . "</li>";
+echo "<li><strong>District:</strong> " . $ramod_village['district'] . "</li>";
+echo "<li><strong>Primary Crops:</strong> " . implode(", ", $ramod_village['agriculture']) . "</li>";
+echo "</ul>";
+?>
