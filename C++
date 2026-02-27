@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+
+struct VillageData {
+    std::string name = "Ramod";
+    std::string taluka = "Kotda Sangani";
+    std::string district = "Rajkot";
+    int pincode = 360030;
+    std::string main_crops = "Cotton, Groundnut, Wheat";
+};
+
+int main() {
+    VillageData ramod;
+    
+    std::cout << "--- " << ramod.name << " Village Records ---" << std::endl;
+    std::cout << "Taluka:   " << ramod.taluka << std::endl;
+    std::cout << "District: " << ramod.district << std::endl;
+    std::cout << "Pincode:  " << ramod.pincode << std::endl;
+    std::cout << "Crops:    " << ramod.main_crops << std::endl;
+    
+    return 0;
+}
