@@ -1,0 +1,16 @@
+def ramod_village_profile():
+    data = {
+        "Name": "Ramod",
+        "Taluka": "Kotda Sangani",
+        "District": "Rajkot",
+        "State": "Gujarat",
+        "Pincode": 360030,
+        "Connectivity": "Well-connected to Gondal and Rajkot"
+    }
+
+    print(f"--- Quick Statistics: {data['Name']} ---")
+    for key, value in data.items():
+        print(f"{key:12}: {value}")
+
+if __name__ == "__main__":
+    ramod_village_profile()
